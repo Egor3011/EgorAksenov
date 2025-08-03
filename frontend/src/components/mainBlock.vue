@@ -10,7 +10,7 @@
 <style>
 .firstBlock {
     position: relative;
-    height: 700px;
+    height: 100vh;
     width: 90%;
     display: flex;
     align-items: center;
