@@ -33,6 +33,10 @@
         h1 {
             font-size: 7vw;
         }
+        img {
+            transform: rotate(90deg);
+            height: 90vw;
+        }
     }
 }
 </style>
