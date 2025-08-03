@@ -37,7 +37,7 @@
 
 @media(max-width: 1024px) {
     .containerform {
-        width: 100%;
+        width: 90%;
     }
 }
 </style>
@@ -57,11 +57,13 @@ const onClickSend = () => {
     }
     else {
         confirm("Отправить данные?")
-        axios.post('http://176.123.166.173/api/form', {
+        axios.post('/api/form', {
             name: firstname,
             sname: sname,
             number: number,
             comment: idea
+        }).catch(error => {
+            alert(error)
         })
     }
     
