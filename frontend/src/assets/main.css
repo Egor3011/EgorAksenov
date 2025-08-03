@@ -14,4 +14,10 @@
   font-weight: normal;
 }
 
+@media(max-width: 1024px) {
+  #app {
+    padding: 5vw;
+  }
+}
+
 

@@ -91,4 +91,9 @@
     margin: 10px;
 }
 
+@media(max-width: 1024px) {
+    .itemContainer {
+        width: 100%;
+    }
+}
 </style>

@@ -28,10 +28,10 @@
     }
 }
 
-@media(min-width: 1024px) {
+@media(max-width: 1024px) {
     .firstBlock {
         h1 {
-            font-size: 50px;
+            font-size: 45px;
         }
     }
 }
