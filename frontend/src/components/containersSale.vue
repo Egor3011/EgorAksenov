@@ -89,7 +89,7 @@
 
 @media(max-width: 1024px) {
     .item {
-        width: 90%;
+        width: 90vw;
     }
 }
 </style>
