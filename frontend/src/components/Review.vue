@@ -31,7 +31,6 @@ export default {
     margin: 20px;
     transition: 1s;
     overflow: hidden;
-    min-width: 350px;
     width: 40%;
     a {
         text-decoration: underline;
