@@ -37,7 +37,8 @@
 
 @media(max-width: 1024px) {
     .containerform {
-        width: 90%;
+        width: 80%;
+        padding: 20px;
     }
 }
 </style>
