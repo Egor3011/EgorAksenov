@@ -51,7 +51,7 @@ const onClickSend = () => {
     }
     else {
         confirm("Отправить данные?")
-        axios.post("http://localhost:8000/api/form", {
+        axios.post('/api/form', {
             name: firstname,
             sname: sname,
             number: number,
