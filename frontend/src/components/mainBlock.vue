@@ -22,7 +22,7 @@
         position: absolute;
     }
     h1 {
-        font-size: 70px;
+        font-size: 65px;
         z-index: 1;
         position: absolute;
     }
