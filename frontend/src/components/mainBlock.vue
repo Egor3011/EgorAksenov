@@ -36,6 +36,7 @@
         img {
             transform: rotate(90deg);
             height: 90vw;
+            width: auto;
         }
     }
 }

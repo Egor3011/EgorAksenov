@@ -51,7 +51,7 @@ export default {
 
 @media(max-width: 1024px) {
     .containerReview {
-        width: calc(80% - 60px);
+        width: 80%;
         min-width: none;
         margin: 0;
     }
