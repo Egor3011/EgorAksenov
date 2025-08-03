@@ -31,7 +31,7 @@
 @media(max-width: 1024px) {
     .firstBlock {
         h1 {
-            font-size: 45px;
+            font-size: 7vw;
         }
     }
 }

@@ -22,8 +22,10 @@ export default {
 <style>
 .containerReview {
     display: inline-block;
+
     border: 1px solid #ffffff;
     border-radius: 35px;
+
     padding: 20px;
     height: auto;
     margin: 20px;
@@ -44,6 +46,13 @@ export default {
     transition: 0.2s;
     a {
         transform: translate(0px, 0px);
+    }
+}
+
+@media(max-width: 1024px) {
+    .containerReview {
+        width: 100%;
+        min-width: none;
     }
 }
 </style>

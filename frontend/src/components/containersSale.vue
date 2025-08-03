@@ -35,9 +35,9 @@
 <style>
 .container {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   flex-wrap: wrap;
-  min-height: 700px;
+  min-height: 800px;
 }
 
 .item:nth-child(1) {
@@ -64,7 +64,6 @@
     border: 1px solid var(--textMain);
     overflow: hidden;
     transition: 0.5s;
-    min-width: 400px;
     min-height: 370px;
 }
 
@@ -77,12 +76,9 @@
 
 .itemContainer {
     padding: 20px;
-    h2 {
-        font-size: 38px;
-    }
     .photoImgContent {
-        width: 330px;
-        height: 330px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -92,7 +88,7 @@
 }
 
 @media(max-width: 1024px) {
-    .itemContainer {
+    .item {
         width: 100%;
     }
 }
