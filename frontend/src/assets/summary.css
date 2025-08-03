@@ -1,0 +1,12 @@
+details {
+    font-size: 20px;
+    margin: 20px;
+}
+
+summary
+{
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  top: calc(0em + 5px);
+}

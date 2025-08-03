@@ -1,0 +1,16 @@
+input {
+  border-radius: 10px;
+  background: #ffffff;
+  border: none;
+  height: 40px;
+  width: 250px;
+  color: #111111;
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  cursor: line;
+  padding-left: 15px;
+}
+
+input::content {
+  margin-left: 10px;
+}

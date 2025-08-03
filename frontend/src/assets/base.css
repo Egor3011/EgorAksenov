@@ -1,0 +1,50 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@font-face 
+{
+  font-family: 'Bounded'; /* Имя, которое вы будете использовать в C SS */
+  src: url('fonts/Bounded-Bold.woff') format('woff');
+  font-weight: bold; /* Насыщенность шрифта */
+  font-style: normal;  /* Стиль шрифта */
+}
+
+@font-face 
+{
+  font-family: 'Montserrat-Medium'; /* Имя, которое вы будете использовать в CSS */
+  src: url('fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: medium; /* Насыщенность шрифта */
+  font-style: normal;  /* Стиль шрифта */
+}
+
+@font-face 
+{
+  font-family: 'Montserrat-Regular'; /* Имя, которое вы будете использовать в CSS */
+  src: url('fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: medium; /* Насыщенность шрифта */
+  font-style: normal;  /* Стиль шрифта */
+}
+
+
+:root {
+
+--textMain: #FFFFFF;
+
+--background: #111111;
+
+--textSecond: #8D8D8D;
+
+} 
+
+
+body {
+  background: var(--background);
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+  color: var(--textMain);
+  scroll-behavior: smooth
+
+}
+
+::selection {
+  color: var(--background);
+  background: #FFFFFF;
+}
+

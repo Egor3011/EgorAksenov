@@ -1,0 +1,1 @@
+telegramBot_token = "8149923820:AAEwIXmsiPy9gChsIEa4j7qgeOigPQ93osE"

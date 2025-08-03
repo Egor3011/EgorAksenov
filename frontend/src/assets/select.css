@@ -1,0 +1,15 @@
+select {
+    padding-left: 15px;
+}
+
+select option {
+  padding: 10px;
+  background-color: var(--textMain);
+  color: var(--background);
+  border-radius: 10px;
+}
+
+select option:checked {
+  background-color: var(--textSecond);
+  color: var(--textMain);
+}

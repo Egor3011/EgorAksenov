@@ -1,0 +1,12 @@
+a {
+    color: var(--textMain);
+    font-family: "Montserrat-Regular";
+    font-size: 20px;
+    text-underline-offset: 3px;
+    transition: .4s;
+}
+
+a:hover {
+    color: var(--textSecond);
+    transition: .1s;
+}
