@@ -88,6 +88,13 @@
 }
 
 @media(max-width: 1024px) {
+    .item:nth-child(1),
+    .item:nth-child(3),
+    .item:nth-child(4),
+    .item:nth-child(2) {
+        width: 100%;
+    }
+
     .item {
         width: 90vw;
     }

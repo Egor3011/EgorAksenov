@@ -33,6 +33,9 @@
     max-width: 600px;
     height: auto;
     border: 1px solid #ffffff;
+    button {
+        font-size: 10px;
+    }
 }
 
 @media(max-width: 1024px) {
