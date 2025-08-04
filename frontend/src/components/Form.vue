@@ -42,7 +42,7 @@
     }
     .buttonConnectWithMe {
         font-size: 4.5vw;
-        width: auto;
+        width: 100%;
     }
 }
 </style>
