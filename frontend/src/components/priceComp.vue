@@ -65,7 +65,14 @@
 
     .price-A-dateText {
         display: block;
-        text-align: start;
+        text-align: end;
+
+        p {
+            font-size: 5vw;
+        }
+        h3 {
+            font-size: 4vw;
+        }
 
     }
 }
