@@ -59,7 +59,7 @@
     .priceText {
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         width: 100%;
     }
 

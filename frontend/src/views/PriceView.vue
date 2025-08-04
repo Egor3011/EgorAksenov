@@ -23,6 +23,8 @@
 .headingBlock {
   text-decoration: underline;
   margin-bottom: 80px;
+
+  backdrop-filter: blur(50px); /* Размытие фона */
 }
 
 .headingBlockSecond {
@@ -31,7 +33,6 @@
 
 .titlePriceComp {
   position: sticky;
-  transform: translate(calc(-2rem + 10px), 0px);
   top: 35px;
 }
 </style>
