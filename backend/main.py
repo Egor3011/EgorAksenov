@@ -7,8 +7,6 @@ from pydantic import BaseModel
 
 import telebot
 
-import datetime
-
 import config as cfg
 
 
@@ -17,7 +15,8 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=['http://aksenovegor.ru',
+                   'http://localhost'],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -37,10 +36,11 @@ bot = telebot.TeleBot(cfg.telegramBot_token)
 def start_message():
     return {"Hello": "world"}
 
+
 @app.post("/form")
 def ping_pong(info: NewForm):
     try:
-        bot.send_message(7990032679, f"Заполнена новая форма:\n{info}\n\n{datetime.datetime.now()}")
+        bot.send_message(7990032679, f"Заполнена новая форма:\n{info}")
         return {"Status": "good"}
     except Exception as ex:
         return {"Status": "-", "Exception": ex}
