@@ -15,7 +15,7 @@ export default {
 
 <template>
     <div class="reviewContainer">
-        <Review v-for="el in elements" :title="el.title" :info="el.info" :logo-img="el.img" :link="el.link"/>
+        <Review v-for="el in elements" style="text-align: start;" :title="el.title" :info="el.info" :logo-img="el.img" :link="el.link"/>
     </div>
 </template>
 
@@ -31,6 +31,7 @@ export default {
   .reviewContainer {
     display: block;
     text-align: center;
+    gap: 40px;
   }
 }
 </style>

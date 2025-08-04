@@ -20,7 +20,7 @@
 }
 
 .connectWithMEContainer {
-    gap: 50px;
+    gap: 10px;
     display: flex; 
     align-items: start; 
     flex-wrap: wrap;
