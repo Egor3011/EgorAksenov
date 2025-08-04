@@ -41,11 +41,6 @@
     img {
         /*visibility: hidden;
         display: none;*/
-        
-        position: absolute;
-        transform: translate(80%);
-        z-index: -1;
-        width: 40%;
     }
     .connectWithMEContainer {
         text-align: center;
