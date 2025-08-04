@@ -33,6 +33,8 @@
     max-width: 600px;
     height: auto;
     border: 1px solid #ffffff;
+
+    text-align: start;
 }
 
 @media(max-width: 1024px) {

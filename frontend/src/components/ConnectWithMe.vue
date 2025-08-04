@@ -1,6 +1,6 @@
 <template>
     <div class="connectWithMEContainer">
-        <div style="display: inline-block">
+        <div style="display: inline-block" class="formInConWMe">
             <Form></Form>
         </div>
         <div class="connectWithMe-MyInfo">
@@ -33,12 +33,19 @@
     }
 }
 
+.formInConWMe {
+    display: inline-block
+}
+
 @media(max-width: 1024px) {
     img {
         visibility: hidden;
         display: none;
     }
     .connectWithMEContainer {
+        text-align: center;
+    }
+    .formInConWMe {
         text-align: center;
     }
 }

@@ -14,3 +14,9 @@ input {
 input::content {
   margin-left: 10px;
 }
+
+@media(max-width: 1024px) {
+  input {
+    font-size: 4vw;
+  }
+}

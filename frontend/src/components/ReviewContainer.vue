@@ -13,12 +13,6 @@ export default {
 }
 </script>
 
-<template>
-    <div class="reviewContainer">
-        <Review v-for="el in elements" style="text-align: start;" :title="el.title" :info="el.info" :logo-img="el.img" :link="el.link"/>
-    </div>
-</template>
-
 
 <style>
 .reviewContainer {
@@ -35,3 +29,10 @@ export default {
   }
 }
 </style>
+
+
+<template>
+    <div class="reviewContainer">
+        <Review v-for="el in elements" style="text-align: left;" :title="el.title" :info="el.info" :logo-img="el.img" :link="el.link"/>
+    </div>
+</template>
