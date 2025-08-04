@@ -38,6 +38,9 @@
         visibility: hidden;
         display: none;
     }
+    .connectWithMEContainer {
+        text-align: center;
+    }
 }
 </style>
 

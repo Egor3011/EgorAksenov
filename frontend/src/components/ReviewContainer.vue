@@ -14,7 +14,23 @@ export default {
 </script>
 
 <template>
-    <div style="display: flex;flex-wrap: wrap; justify-content: space-between;">
+    <div class="reviewContainer">
         <Review v-for="el in elements" :title="el.title" :info="el.info" :logo-img="el.img" :link="el.link"/>
     </div>
 </template>
+
+
+<style>
+.reviewContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+@media(max-width: 1024px) {
+  .reviewContainer {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
