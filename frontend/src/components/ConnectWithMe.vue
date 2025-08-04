@@ -49,6 +49,9 @@
         text-align: center;
         display: none;
     }
+    .connectWithMe-MyInfo .links_cwm {
+        text-align: left;
+    }
 }
 </style>
 

@@ -40,7 +40,7 @@ def start_message():
 @app.post("/form")
 def ping_pong(info: NewForm):
     try:
-        bot.send_message(7990032679, f"Заполнена новая форма:\n{info}")
+        bot.send_message(7990032679, f"Заполнена новая форма:\n{info.name} {info.sname}\n{info.comment} \n\n{info.number}")
         return {"Status": "good"}
     except Exception as ex:
         return {"Status": "-", "Exception": ex}
