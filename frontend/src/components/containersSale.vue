@@ -98,5 +98,9 @@
     .item {
         width: 90vw;
     }
+
+    .container {
+        gap: 30px
+    }
 }
 </style>

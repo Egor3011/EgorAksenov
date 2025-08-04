@@ -53,6 +53,13 @@ export default {
         width: 80%;
         min-width: none;
         margin: 0;
+
+        margin-bottom: 20px;
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+            transform: translate(0px, 0px);
+        }
     }
 }
 </style>
