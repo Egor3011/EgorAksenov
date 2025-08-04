@@ -6,7 +6,7 @@
             <p>{{info}}</p>
             <a :href="linkExample">Посмотреть примеры</a>
         </div>
-        <div class="priceText" style="width: 15%;">
+        <div class="priceText">
             <h2>Цена:</h2>
             <div class="price-A-dateText">
                 <p>{{price}}</p>
@@ -46,6 +46,10 @@
     transform: translate(0px, -5px);
 }
 
+.priceText {
+    width: 20%;
+}
+
 @media(max-width: 1024px) {
     .priceContainer {
         display: block;
@@ -56,6 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-items: start;
+        width: 100%;
     }
 
     .price-A-dateText {
