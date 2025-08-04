@@ -28,6 +28,9 @@
 
 .connectWithMe-MyInfo {
     img {
+        position: absolute;
+        transform: translate(50%, -20px);
+        z-index: -1;
         width: 30%;
         height: auto;
     }
@@ -39,8 +42,8 @@
 
 @media(max-width: 1024px) {
     img {
-        visibility: hidden;
-        display: none;
+        /*visibility: hidden;
+        display: none;*/
     }
     .connectWithMEContainer {
         text-align: center;
