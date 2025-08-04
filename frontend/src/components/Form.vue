@@ -41,6 +41,8 @@
     .containerform {
         width: 80%;
         padding: 20px;
+
+        margin: auto;
     }
     .buttonConnectWithMe {
         font-size: 4.5vw;
