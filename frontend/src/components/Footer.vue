@@ -3,17 +3,16 @@
     <div style="display: flex; flex-wrap: wrap;" class="footerContainer">
         
         <div class="links itemFooter">
-            <a href="#orderdevelopment">Заказать разработку</a>
-            <a href="#connectWithMe">Связаться со мной</a>
-            <a href="#reviews">Отзывы</a>
-            <a href="#faq">Частые вопросы</a>
+            <button @click="scrolToById('connectWithMe')">Связаться со мной</button>
+            <button @click="scrolToById('reviews')">Отзывы</button>
+            <button @click="scrolToById('faq')">Частые вопросы</button>
         </div>
         <div class="myContacts itemFooter">
             <a href=" https://t.me/aksenovegor_web" target="_blank">@aksenovegor_web</a>
             <a href="" target="_blank">aksenovegorweb@gmail.com</a>
         </div>
         <div class="myContacts itemFooter">
-            <a href="">aksenovegor.ru</a>
+            <a href="aksenovegor.ru">aksenovegor.ru</a>
         </div>
     </div>
     
@@ -30,6 +29,32 @@ a {
     width: 33%;
     min-width: 320px;
     margin-bottom: 40px;
+    button {
+        display: block;
+        margin: 0%;
+        margin-bottom: 19px;
+        color: var(--textMain);
+
+        border: none;
+        background: none;
+
+        text-decoration: underline;
+        font-family: "Montserrat-Regular";
+
+        text-align: start;
+        align-items: start;
+
+        width: auto;
+        height: auto;
+
+        padding: 0;
+
+        transition: .2s;
+    }
+    button:hover {
+        color: var(--textSecond);
+        transition: .1s;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -38,3 +63,14 @@ a {
     }
 }
 </style>
+
+<script setup>
+
+const scrolToById = (idTo) => {
+    const element = document.getElementById(idTo);
+    element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+}
+</script>
