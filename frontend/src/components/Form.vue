@@ -13,25 +13,28 @@
         </div>
         <div>
             <p>Онлайн продукт (например сайт под ключ)</p>
-            <div>
-                <div class="radio-group">
-                    <input type="radio" id="option1" name="idea" value="Сайт под заказ" v-model="idea">
-                    <label for="option1">Сайт под ключ</label>
-                </div>
+            <div class="radialContainerForm">
+                <div>
+                    <div class="radio-group">
+                        <input type="radio" id="option1" name="idea" value="Сайт под заказ" v-model="idea">
+                        <label for="option1">Сайт под ключ</label>
+                    </div>
 
-                <div class="radio-group">
-                    <input type="radio" id="option2" name="idea" value="Чат-бот" v-model="idea">
-                    <label for="option2">Чат-бот</label>
+                    <div class="radio-group">
+                        <input type="radio" id="option2" name="idea" value="Чат-бот" v-model="idea">
+                        <label for="option2">Чат-бот</label>
+                    </div>
                 </div>
+                <div>
+                    <div class="radio-group">
+                        <input type="radio" id="option3" name="idea" value="Верстка сайта" v-model="idea">
+                        <label for="option3">Верстка сайта</label>
+                    </div>
 
-                <div class="radio-group">
-                    <input type="radio" id="option3" name="idea" value="Верстка сайта" v-model="idea">
-                    <label for="option3">Верстка сайта</label>
-                </div>
-
-                <div class="radio-group">
-                    <input type="radio" id="option4" name="idea" value="Другое" v-model="idea">
-                    <label for="option4">Другое</label>
+                    <div class="radio-group">
+                        <input type="radio" id="option4" name="idea" value="Другое" v-model="idea">
+                        <label for="option4">Другое</label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,6 +89,11 @@ const onClickSend = () => {
     text-align: start;
 }
 
+.radialContainerForm {
+    display: flex;
+    gap: 40px;
+}
+
 @media(max-width: 1024px) {
     .containerform {
         width: 80%;
@@ -96,6 +104,11 @@ const onClickSend = () => {
     .buttonConnectWithMe {
         font-size: 4.5vw;
         width: 100%;
+    }
+
+
+    .radialContainerForm {
+        display: block;
     }
 }
 
