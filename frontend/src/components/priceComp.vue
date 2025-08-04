@@ -8,11 +8,63 @@
         </div>
         <div class="priceText" style="width: 15%;">
             <h2>Цена:</h2>
-            <p>{{price}}</p>
-            <h3>{{date}}</h3>
+            <div class="price-A-dateText">
+                <p>{{price}}</p>
+                <h3>{{date}}</h3>
+            </div>
         </div>
     </div>
 </template>
+
+<style>
+.priceContainer {
+    border-radius: 30px;
+    border: 1px solid var(--textMain);
+
+    margin: auto;
+    padding: 30px;
+
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    transition: 0.3s;
+    margin: 20px;
+    img {
+        width: 70px;
+        height: 70px;
+        margin: 3%;
+    }
+}
+
+.priceContainer:hover {
+    box-shadow: 0px 0px 20px #b8b8b8;
+    transition: 0.2s;
+    transform: translate(0px, -5px);
+}
+
+@media(max-width: 1024px) {
+    .priceContainer {
+        display: block;
+        text-align: center;
+    }
+
+    .priceText {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .price-A-dateText {
+        display: block;
+        text-align: start;
+
+    }
+}
+</style>
 
 
 <script>
@@ -28,28 +80,4 @@ export default {
 }
 </script>
 
-<style>
-.priceContainer {
-    border-radius: 30px;
-    border: 1px solid var(--textMain);
-    padding: 30px;
-    height: auto;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.3s;
-    margin: 20px;
-    img {
-        width: 70px;
-        height: 70px;
-        margin: 3%;
-    }
-}
 
-.priceContainer:hover {
-    box-shadow: 0px 0px 20px #b8b8b8;
-    transition: 0.2s;
-    transform: translate(0px, -5px);
-}
-</style>
