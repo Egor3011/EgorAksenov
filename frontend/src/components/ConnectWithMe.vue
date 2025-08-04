@@ -47,6 +47,7 @@
     }
     .formInConWMe {
         text-align: center;
+        display: none;
     }
 }
 </style>
