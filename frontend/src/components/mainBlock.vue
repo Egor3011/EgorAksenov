@@ -30,6 +30,7 @@
 
 @media(max-width: 1024px) {
     .firstBlock {
+        height: 60vh;
         h1 {
             font-size: 7vw;
         }

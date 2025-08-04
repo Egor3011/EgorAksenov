@@ -21,3 +21,10 @@ button:active {
   background-color: lightgray;
   box-shadow: 10 10px 10px rgb(255, 255, 255);
 }
+
+@media(max-width: 1024px) {
+  button {
+    width: auto;
+    padding: 10px 0;
+  }
+}

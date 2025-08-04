@@ -20,7 +20,7 @@
             <input v-model="number" type="tel" id="tel" data-tel-input name="tel" placeholder="+7 (999) 999-99-99" minlength="11" required>
         </div>
         <div style="text-align: center; margin-top: 30px">
-            <button @click="onClickSend" style="font-family: 'Bounded'" >Оставить заявку</button>
+            <button class="buttonConnectWithMe" @click="onClickSend" style="font-family: 'Bounded'" >Оставить заявку</button>
         </div>
     </div>
 </template>
@@ -33,15 +33,16 @@
     max-width: 600px;
     height: auto;
     border: 1px solid #ffffff;
-    button {
-        font-size: 10px;
-    }
 }
 
 @media(max-width: 1024px) {
     .containerform {
         width: 80%;
         padding: 20px;
+    }
+    .buttonConnectWithMe {
+        font-size: 4.5vw;
+        width: auto;
     }
 }
 </style>
