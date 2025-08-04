@@ -39,8 +39,8 @@
 
 @media(max-width: 1024px) {
     img {
-        /*visibility: hidden;
-        display: none;*/
+        visibility: hidden;
+        display: none;
     }
     .connectWithMEContainer {
         text-align: center;
