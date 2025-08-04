@@ -64,7 +64,7 @@ const onClickSend = () => {
     }
     else {
         confirm("Отправить данные?")
-        axios.post('/api/form', {
+        axios.post('http://aksenovegor.ru/api/form', {
             name: firstname,
             sname: sname,
             number: number,
