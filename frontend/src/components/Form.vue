@@ -15,26 +15,25 @@
             <p>Онлайн продукт (например сайт под ключ)</p>
             <div>
                 <div class="radio-group">
-                    <input type="radio" id="option1" name="idea" value="1" v-model="idea">
+                    <input type="radio" id="option1" name="idea" value="Сайт под заказ" v-model="idea">
                     <label for="option1">Сайт под ключ</label>
                 </div>
 
                 <div class="radio-group">
-                    <input type="radio" id="option2" name="idea" value="2" v-model="idea">
+                    <input type="radio" id="option2" name="idea" value="Чат-бот" v-model="idea">
                     <label for="option2">Чат-бот</label>
                 </div>
 
                 <div class="radio-group">
-                    <input type="radio" id="option3" name="idea" value="3" v-model="idea">
+                    <input type="radio" id="option3" name="idea" value="Верстка сайта" v-model="idea">
                     <label for="option3">Верстка сайта</label>
                 </div>
 
                 <div class="radio-group">
-                    <input type="radio" id="option4" name="idea" value="also" v-model="idea">
+                    <input type="radio" id="option4" name="idea" value="Другое" v-model="idea">
                     <label for="option4">Другое</label>
                 </div>
             </div>
-            <input v-if="idea == 'also'" type="text" v-model="fullIdea">
         </div>
         <div>
             <p>Контакт для связи* (номер телефона)</p>
@@ -57,7 +56,6 @@ let number = '';
 let idea = '';
 
 const onClickSend = () => {
-    alert(idea)
     if (firstname == '' || sname == '' || idea == '' || number == '') {
         alert("Заполните все поля!")
     }
