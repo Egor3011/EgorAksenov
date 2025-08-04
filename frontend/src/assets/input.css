@@ -11,6 +11,11 @@ input {
   padding-left: 15px;
 }
 
+input[type="radio"] {
+  background: none;
+  border: 1px solid #fff;
+}
+
 input::content {
   margin-left: 10px;
 }

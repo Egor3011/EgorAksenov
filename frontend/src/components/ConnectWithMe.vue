@@ -48,9 +48,7 @@
     .formInConWMe {
         text-align: center;
         display: none;
-    }
-    .connectWithMe-MyInfo .links_cwm {
-        text-align: left;
+        margin-bottom: 40px;
     }
 }
 </style>
