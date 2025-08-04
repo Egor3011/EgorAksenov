@@ -31,4 +31,10 @@ a {
     min-width: 320px;
     margin-bottom: 40px;
 }
+
+@media(max-width: 1024px) {
+    a {
+        font-size: 4vw;
+    }
+}
 </style>
