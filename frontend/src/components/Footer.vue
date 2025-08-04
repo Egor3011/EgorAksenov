@@ -61,6 +61,9 @@ a {
     a {
         font-size: 4vw;
     }
+    .itemFooter button {
+        font-size: 4vw;
+    }
 }
 </style>
 
