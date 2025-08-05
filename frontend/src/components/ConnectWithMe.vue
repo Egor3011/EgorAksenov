@@ -20,16 +20,16 @@
 }
 
 .connectWithMEContainer {
-    gap: 10px;
+    gap: 50px;
     display: flex; 
     align-items: start; 
-    flex-wrap: wrap;
 }
 
 .connectWithMe-MyInfo {
     img {
         width: 30%;
         height: auto;
+        position: absolute;
     }
 }
 

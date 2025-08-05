@@ -33,7 +33,26 @@
 
 .titlePriceComp {
   position: sticky;
+
+  /*backdrop-filter: blur(10px);*/
+
+  border-radius: 20px;
+  z-index: 10;
+  padding: 10px;
   top: 35px;
+}
+
+.titlePriceComp::before {
+  content: ""; /* Обязательно для псевдоэлементов */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px); /*  Цвет и прозрачность фона,  замените на желаемый */
+  filter: blur(10px); /*  Степень размытия */
+  z-index: -1; /*  Отправляет размытый фон за текст */
+  border-radius: 10px; /*  Закругление углов, если нужно */
 }
 </style>
 

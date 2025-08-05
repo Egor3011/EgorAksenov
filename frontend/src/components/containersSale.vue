@@ -1,8 +1,18 @@
 <template>
     <div class="container">
+        
         <div class="item">
-            <div class="itemContainer" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-                <div>
+            <div class="itemContainer">
+                <h2>Разработка сайта под ключ</h2>
+                <div class="infoBots">
+                    <p style="margin-bottom: 15px;">Ваша идея → Готовый проект</p>
+                    <p>Полностью разработаю ваш проект от идеи до готового продукта в интернете, который будет помогать в продаже</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemContainer">
+                <div style="display: block;">
                     <h2>Чат-боты</h2>
                     <div class="infoBots">
                         <p>Телеграмм боты</p>
@@ -10,21 +20,14 @@
                         <p>Дискорд боты</p>
                         <p>Боты для сайта</p>
                     </div>
+                    <a href="" style="align-content: end;">Подробнее</a>
                 </div>
-                <img src="../assets/img/Artboard75.png" class="photoImgContent" style="rotate: 15deg;">
             </div>
         </div>
         <div class="item">
             <div class="itemContainer">
-                <h2>Разработка сайта под ключ</h2>
-                <div class="infoBots">
-                    <p style="margin-bottom: 15px;">Ваша идея > План > Готовый проект</p>
-                    <p>Полностью разработаем ваш проект от идеи до готового продукта в интернете, который будет помогать в продаже</p>
-                </div>
+                <h2>Разработка сайта по готовому макету</h2>
             </div>
-        </div>
-        <div class="item">
-            <div class="itemContainer"></div>
         </div>
         <div class="item">
             <div class="itemContainer"></div>
@@ -40,23 +43,8 @@
   min-height: 800px;
 }
 
-.item:nth-child(1) {
-  flex-grow: 1;
-  width: 50%;
-  height: 50%;
-}
 
-.item:nth-child(2),
-.item:nth-child(3) {
-  flex-grow: 1;
-  width: 40%;
-  height: 50%;
-}
 
-.item:nth-child(4) {
-  width: 50%;
-  height: 50%;
-}
 
 .item {
     border-radius: 30px;
@@ -72,6 +60,9 @@
     background: var(--textMain);
     box-shadow: 0px 0px 10px var(--textMain);
     transition: 0.3s;
+    a {
+        color: var(--background); ;
+    }
 }
 
 .itemContainer {
@@ -85,6 +76,21 @@
 
 .infoBots p {
     margin: 10px;
+}
+
+
+.item:nth-child(1),
+.item:nth-child(4) {
+  flex-grow: 1;
+  width: 50%;
+  height: 30%;
+}
+
+.item:nth-child(2),
+.item:nth-child(3) {
+  flex-grow: 1;
+  width: 30%;
+  height: 50%;
 }
 
 @media(max-width: 1024px) {

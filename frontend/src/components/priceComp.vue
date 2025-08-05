@@ -4,13 +4,13 @@
         <div class="mainText">
             <h2 class="nameUslugi" style="margin-top: 0px;">{{title}}</h2>
             <p>{{info}}</p>
-            <a :href="linkExample">Посмотреть примеры</a>
+            <a :href="linkExample">Таблица с расчетом</a>
         </div>
         <div class="priceText">
             <h2>Цена:</h2>
             <div class="price-A-dateText">
-                <p>{{price}}</p>
-                <h3>{{date}}</h3>
+                <p>{{date}}</p>
+                <h3>{{price}}</h3>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
 }
 
 .priceText {
-    width: 20%;
+    width: 30%;
 }
 
 @media(max-width: 1024px) {
@@ -68,10 +68,10 @@
         text-align: end;
 
         p {
-            font-size: 5vw;
+            order: 2;
         }
         h3 {
-            font-size: 4vw;
+            order: -1;
         }
 
     }
