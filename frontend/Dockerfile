@@ -13,8 +13,8 @@ FROM nginx:stable-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY --from=build /app/nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY --from=build /app/ssl_sertificate/certificate.crt /etc/ssl/certificate.crt
-COPY --from=build /app/ssl_sertificate/certificate.key /etc/ssl/certificate.key
+COPY --from=build /app/ssl_sertificate/certificate.crt /certificate.crt
+COPY --from=build /app/ssl_sertificate/certificate.key /certificate.key
 
 
 EXPOSE 5000
