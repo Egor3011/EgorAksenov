@@ -44,6 +44,7 @@
     }
     .connectWithMEContainer {
         text-align: center;
+        display: block;
     }
     .formInConWMe {
         text-align: center;
