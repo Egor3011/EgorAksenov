@@ -9,6 +9,11 @@ export default {
     return {
         elements: [{title: "Аксенов Егор", info: "CRM Pro полностью изменила наш подход к продажам. Автоматизация задач сэкономила нам десятки часов в месяц, а отчеты помогают принимать взвешенные решения.", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"}]
     }
+  },
+  mounted() {
+    axios.get("https://c1bd7fa3efd9e6d1.mokky.dev/reviews").then(res => {
+      this.elements = res.data
+    })
   }
 }
 </script>
