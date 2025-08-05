@@ -7,7 +7,7 @@ export default {
   },
   data() {
     return {
-        elements: [{title: "Аксенов Егор", info: "CRM Pro полностью изменила наш подход к продажам. Автоматизация задач сэкономила нам десятки часов в месяц, а отчеты помогают принимать взвешенные решения.", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"},{title: "Ghb", info: "sadasdasd", img: "dsaddsadsad", link: "fdsdfsfsdf"}]
+        elements: []
     }
   },
   mounted() {
