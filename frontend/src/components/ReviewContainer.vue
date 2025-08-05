@@ -1,19 +1,21 @@
 <script>
 import Review from './Review.vue';
+import axios from 'axios';
 
 export default {
   components: {
     Review
+  },  
+  mounted() { 
+    axios.get("https://c1bd7fa3efd9e6d1.mokky.dev/reviews").then((datas) => {
+        console.log(datas)
+        this.elements = datas.data
+      }).catch(error => {console.log(error)})
   },
   data() {
     return {
-        elements: []
+        elements: [],
     }
-  },
-  mounted() {
-    axios.get("https://c1bd7fa3efd9e6d1.mokky.dev/reviews").then(res => {
-      this.elements = res.data
-    })
   }
 }
 </script>

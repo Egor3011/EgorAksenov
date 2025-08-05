@@ -4,7 +4,7 @@
         <div class="mainText">
             <h2 class="nameUslugi" style="margin-top: 0px;">{{title}}</h2>
             <p>{{info}}</p>
-            <a :href="linkExample">Таблица с расчетом</a>
+            <a v-if="linkExample != '+'" :href="linkExample">Таблица с расчетом</a>
         </div>
         <div class="priceText">
             <h2>Цена:</h2>
@@ -88,6 +88,16 @@ export default {
     date: String,
     linkExample: String,
     imgLogo: String
+  },
+  data() {
+    return {
+        visab: true
+    }
+  },
+  mounted() {
+    if(this.linkExample == "") {
+        this.visab = false
+    }
   }
 }
 </script>
