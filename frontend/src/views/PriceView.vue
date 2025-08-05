@@ -14,8 +14,8 @@
       <priceCompContainer link-backend="https://c1bd7fa3efd9e6d1.mokky.dev/chatbot"/>
     </div>
     <div id="ddwebsait">
-      <h1 class="titlePriceComp">Сайт по готовому макету</h1>
-      <priceCompContainer link-backend="http://176.109.111.74:8000/pricesInfo/fullSait"/>
+      <h1 class="titlePriceComp">Другое</h1>
+      <priceCompContainer link-backend="https://c1bd7fa3efd9e6d1.mokky.dev/also"/>
     </div>
   </div>
 </template>
