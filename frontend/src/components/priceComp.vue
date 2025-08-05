@@ -9,8 +9,8 @@
         <div class="priceText">
             <h2>Цена:</h2>
             <div class="price-A-dateText">
-                <p>{{date}}</p>
                 <h3>{{price}}</h3>
+                <p>{{date}}</p>
             </div>
         </div>
     </div>
@@ -48,6 +48,9 @@
 
 .priceText {
     width: 30%;
+    p {
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -59,7 +62,7 @@
     .priceText {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         width: 100%;
     }
 
@@ -67,13 +70,10 @@
         display: block;
         text-align: end;
 
-        p {
-            order: 2;
-        }
-        h3 {
-            order: -1;
-        }
+    }
 
+    .price-A-dateText p {
+        font-size: 3vw;
     }
 }
 </style>
