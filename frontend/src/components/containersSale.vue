@@ -20,7 +20,7 @@
                         <p>Дискорд боты</p>
                         <p>Боты для сайта</p>
                     </div>
-                    <a href="" style="align-content: end;">Подробнее</a>
+                    <a href="">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
 .item:nth-child(3) {
   flex-grow: 1;
   width: 30%;
-  height: 50%;
+  height: 30%;
 }
 
 @media(max-width: 1024px) {
