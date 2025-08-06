@@ -70,6 +70,10 @@ a {
 <script setup>
 
 const scrolToById = (idTo) => {
+    const currentUrl = window.location.href;
+    if (currentUrl == 'https://aksenovegor.ru/price') {
+        window.open("https://aksenovegor.com");
+    }
     const element = document.getElementById(idTo);
     element.scrollIntoView({
             behavior: 'smooth',
