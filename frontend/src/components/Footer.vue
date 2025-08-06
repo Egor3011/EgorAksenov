@@ -72,7 +72,7 @@ a {
 
 const scrolToById = (idTo) => {
     const currentUrl = window.location.href;
-    if (currentUrl != 'https://aksenovegor.ru') {
+    if (currentUrl == 'https://aksenovegor.ru/price') {
         window.open("https://aksenovegor.ru#" + idTo);
     }
     const element = document.getElementById(idTo);
