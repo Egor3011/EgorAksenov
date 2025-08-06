@@ -15,9 +15,9 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['http://aksenovegor.ru',
-                   'http://localhost',
-                   'https://aksenovegor.ru'],
+    allow_origins=['https://aksenovegor.ru',
+                   'https://www.aksenovegor.ru',
+                   'http://localhost',],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
