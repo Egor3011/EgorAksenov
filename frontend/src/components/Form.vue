@@ -69,6 +69,10 @@ const onClickSend = () => {
             sname: sname,
             number: number,
             comment: idea
+        }).then((res) => {
+            if(res.status == "good") {
+                alert("Ваша заявка отправленна. В ближайшее время я свяжусь с вами для обсуждения проекта")
+            }
         }).catch(error => {
             alert(error)
         })
