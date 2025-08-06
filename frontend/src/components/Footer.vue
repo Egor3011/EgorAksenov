@@ -3,6 +3,7 @@
     <div style="display: flex; flex-wrap: wrap;" class="footerContainer">
         
         <div class="links itemFooter">
+            <a href="https://aksenovegor.ru/price" target="_blank">Посмотреть цены</a>
             <button @click="scrolToById('connectWithMe')">Связаться со мной</button>
             <button @click="scrolToById('reviews')">Отзывы</button>
             <button @click="scrolToById('faq')">Частые вопросы</button>
