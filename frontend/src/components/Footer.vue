@@ -13,7 +13,7 @@
             <a href="" target="_blank">aksenovegorweb@gmail.com</a>
         </div>
         <div class="myContacts itemFooter">
-            <a href="aksenovegor.ru">aksenovegor.ru</a>
+            <a href="https://aksenovegor.ru">aksenovegor.ru</a>
         </div>
     </div>
     
