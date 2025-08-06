@@ -70,7 +70,7 @@ const onClickSend = () => {
             number: number,
             comment: idea
         }).then((res) => {
-            if(res.status == "good") {
+            if(res.data.Status == "good") {
                 alert("Ваша заявка отправленна. В ближайшее время я свяжусь с вами для обсуждения проекта")
             }
         }).catch(error => {
