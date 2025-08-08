@@ -14,7 +14,7 @@ services:
     depends_on:
       - backend
       - frontend
-      - TGbot
+      - tgbot
     networks:
       - dev
     
@@ -25,9 +25,9 @@ services:
     networks:
       - dev
 
-  TGbot:
+  tgbot:
     build:
-      context: ./TGbot
+      context: ./tgbot
     networks:
       - dev
 
