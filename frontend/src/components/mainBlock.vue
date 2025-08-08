@@ -2,7 +2,7 @@
     <div style="text-align: center;">
         <div class="firstBlock">
             <img src="../assets/img/E5424_33.png">
-            <h1>Разработка сайтов которые работают</h1>
+            <h1>Разработка сайтов, которые работают</h1>
         </div>
     </div>
 </template>
