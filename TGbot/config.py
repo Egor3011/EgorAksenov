@@ -1,0 +1,11 @@
+BOT_TOKEN = '7991199623:AAE8JelCi9o_5-F6EGNE88kJ9X63gU5sKtQ'
+
+adminChat = ''
+
+
+#mysql
+
+MYSQL_USER = 'backend_tg'
+MYSQL_PASSWORD = 'AH2PtwPqtCd2UY7UzX9P'
+MYSQL_IP = ''
+MYSQL_PORT = 3306
