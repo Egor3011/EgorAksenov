@@ -6,10 +6,10 @@
             <a href="https://aksenovegor.ru/price" target="_blank">Посмотреть цены</a>
             <button @click="scrolToById('connectWithMe')">Связаться со мной</button>
             <button @click="scrolToById('reviews')">Отзывы</button>
-            <button @click="scrolToById('faq')">Частые вопросы</button>
+            <a href="https://aksenovegor.ru/faq">Частые вопросы</a>
         </div>
         <div class="myContacts itemFooter">
-            <a href=" https://t.me/aksenovegor_web" target="_blank">@aksenovegor_web</a>
+            <a href="https://t.me/aksenovegor_web" target="_blank">@aksenovegor_web</a>
             <a href="" target="_blank">aksenovegorweb@gmail.com</a>
         </div>
         <div class="myContacts itemFooter">
