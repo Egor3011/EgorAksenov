@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 <template>
     <div class="headerContainer">
         <RouterLink class="headerItem" to="/">
-            <p>EGOR AKSENOV</p>
+            <p>AKSENOV EGOR</p>
         </RouterLink>
         <RouterLink class="headerItem" to="/price">
             <p>Заказать</p>
