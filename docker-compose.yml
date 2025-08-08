@@ -27,7 +27,7 @@ services:
 
   tgbot:
     build:
-      context: ./tgbot
+      context: ./TGbot
     networks:
       - dev
 
