@@ -16,6 +16,5 @@ COPY --from=build /app/nginx.conf /etc/nginx/conf.d/default.conf
 COPY /certs/aksenovegor.crt /etc/nginx/certs/aksenovegor.crt
 COPY /certs/aksenovegor.key /etc/nginx/certs/aksenovegor.key
 
-
 EXPOSE 5000
 CMD [ "nginx", "-g", "daemon off;" ]
