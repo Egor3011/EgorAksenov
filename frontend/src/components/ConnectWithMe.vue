@@ -66,7 +66,7 @@ onMounted(() => {
     gsap.from(".links_cwm", {
     scrollTrigger: {
         trigger: ".connectWithMEContainer",
-        start: "top center",
+        start: "center bottom",
         markers: true
     },
     opacity: 0,
