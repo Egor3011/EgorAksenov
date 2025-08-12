@@ -56,5 +56,23 @@
 
 <script setup>
 import Form from '@/components/Form.vue';
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { onMounted } from 'vue';
+
+gsap.registerPlugin(ScrollTrigger);
+
+onMounted(() => {
+    gsap.from(".links_cwm", {
+    scrollTrigger: {
+        trigger: ".connectWithMEContainer",
+        start: "top center",
+        markers: true
+    },
+    opacity: 0,
+    x: -100,
+    duration: 1
+  })
+})
 
 </script>

@@ -13,21 +13,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
-  gsap.from(".testtest", {
+  gsap.from(".mainBlock", {
     opacity: 0,
-    x: 100,
-    duration: 1
+    x: 50,
+    duration: 0.5
   })
 }) 
 </script>
 
 <template>
-  <main class="testtest">
+  <main class="mainBlock">
     <mainBlock/>
     
 
     <div class="line">
-      <Transition appear @before-enter="beforeEnter"/>
     </div>
 
     <div>
