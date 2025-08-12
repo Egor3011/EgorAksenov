@@ -5,6 +5,7 @@ import App from './App.vue'
 import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 import router from './router'
 
+
 const app = createApp(App)
 
 app.use(router)

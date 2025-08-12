@@ -4,13 +4,31 @@ import ReviewContainer from '@/components/ReviewContainer.vue';
 import faqContainer from '@/components/faqContainer.vue';
 import containersSale from '@/components/containersSale.vue';
 import mainBlock from '@/components/mainBlock.vue';
+
+import { onMounted, Transition } from 'vue';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+onMounted(() => {
+  gsap.from(".testtest", {
+    opacity: 0,
+    x: 100,
+    duration: 1
+  })
+}) 
 </script>
 
 <template>
-  <main>
+  <main class="testtest">
     <mainBlock/>
+    
 
-    <div class="line"></div>
+    <div class="line">
+      <Transition appear @before-enter="beforeEnter"/>
+    </div>
 
     <div>
       <h1 class="headingBlock" id="orderdevelopment">Заказать</h1>
